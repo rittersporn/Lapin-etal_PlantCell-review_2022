@@ -27,4 +27,4 @@ https://edmond.mpdl.mpg.de/imeji/collection/Pv5t4gM8Sv0TOrCU
 
 
 ## Content of repository related to Figure 2B:
-1. Code to draw boxplots in Figure 2B - ./boxplot-for-Figure2B/boxplot-scaled-expression-GOI.R with input data from the above collection at Edmond
+1. Code to draw boxplots in Figure 2B - ./boxplot-for-Figure2B/boxplot-scaled-expression-GOI.R with input data from the above Edmond collection
