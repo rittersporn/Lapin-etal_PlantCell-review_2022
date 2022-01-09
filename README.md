@@ -31,4 +31,11 @@ https://edmond.mpdl.mpg.de/imeji/collection/Pv5t4gM8Sv0TOrCU
 
 ## Figure 4C
 ### Source data:
+
+Processed ChIP-seq data for SARD1 (Sun et al 2015, ChIP-seq reveals broad roles of SARD1 and CBP60g in regulating plant immunity https://www.nature.com/articles/ncomms10159) come from the preprint Griebel, Lapin et al. 2021 Arabidopsis Topless-related 1 mitigates physiological damage and growth penalties of induced immunity (https://www.biorxiv.org/content/10.1101/2021.07.07.451397v1.full)
+
+SARD1 chromatin enrichment profiles (bigwig format) for Psm-infected plants can be found here:
+https://edmond.mpdl.mpg.de/imeji/collection/U6N5zIOIWgjjMZCu
+
 ### Related content of repository:
+1. Code to draw metaplot in Figure 4C - ./metaplot-for-Figure4C/code-for-metaplot-SARD1.txt with input data from the above Edmond collection and bed files in ./metaplot-for-Figure4C/bed-files
