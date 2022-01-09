@@ -1,4 +1,4 @@
-# Lapin etal Plant Cell review 2022
+# Lapin et al Plant Cell review 2022
 # Molecular innovations in plant TIR-based immunity signaling
 
 Figure 2A contains heatmap based on previuosly published RNAseq data:
@@ -11,4 +11,4 @@ Figure 2A contains heatmap based on previuosly published RNAseq data:
 ## Content of repository:
 
 1. Code to preprocess raw RNAseq data - ./processing-of-raw-RNAseq-data/1_step-from-download-to-counts.txt
-2. 
+2. SRA accession codes for ETI and PTI+ETI datasets ./processing-of-raw-RNAseq-data/PTI-and-ETI/SraRunTable_merged.txt and ./processing-of-raw-RNAseq-data/PTI-and-ETI/SraRunTable_merged.txt
