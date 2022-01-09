@@ -1,4 +1,5 @@
 ##### Script to draw a heatmap of gene expression
+# input files (log2FC) and lists of genes of interest are in the same folder as the script heatmap-for-Figure2A/input
 
 library("pheatmap")
 
