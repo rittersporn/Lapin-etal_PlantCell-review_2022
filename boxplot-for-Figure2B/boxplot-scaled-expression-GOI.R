@@ -51,18 +51,22 @@ metadata_tpm <- read.delim("./TPM_values/metainfo.txt",
                              header = TRUE, stringsAsFactors = FALSE)
 
 # load and standardize gene expression levels
-tpm <- read.delim("./TPM_values/rice_quant_gene_level.txt", sep = " ", header = TRUE, stringsAsFactors = FALSE)
+tpm <- read.delim("./TPM_values/maize_quant_gene_level.txt", sep = " ", header = TRUE, stringsAsFactors = FALSE)
+#tpm <- read.delim("./TPM_values/rice_quant_gene_level.txt", sep = " ", header = TRUE, stringsAsFactors = FALSE)
+#tpm <- read.delim("./TPM_values/barley_quant_gene_level.txt", sep = " ", header = TRUE, stringsAsFactors = FALSE)
 tpm <- standardise_tpm(tpm)
 
 # define genes of interest
-GOI <- c("Os07t0566800")
+GOI <- c("Zm00001d021820", "Zm00001d006617", "Zm00001d007761")
+#GOI <- c("Os07t0566800")
+#GOI <- c("HORVU2Hr1G039670")
 
 # tidy up the dataframe
 tpm_tidy <- tidyup_df(tpm_df = tpm, metadata_df = metadata_tpm,
                       GOI = GOI)
 
 # make boxplots
-pdf("boxplot_GOI_rice_20220109.pdf")
+pdf("boxplot_GOI_barley_20220109.pdf")
 df_for_boxplot <- tpm_tidy[tpm_tidy$GeneID %in% c(GOI),]
 
 df_for_boxplot$Induction_status <- factor(df_for_boxplot$Induction_status, levels = c("untriggered", "triggered"))
@@ -72,6 +76,6 @@ p + geom_boxplot(aes(fill = Induction_status), outlier.color = NA) +
   theme_classic() +
   theme(axis.title.x=element_blank(),
         axis.text.x = element_text(face = "bold", size = 8, angle = 45, hjust = 1))+
-  labs(title = "rice",
+  labs(title = "barley",
        y = "expression Z-score")
 dev.off()
