@@ -1,3 +1,14 @@
+#!/bin/bash
+
+### adjust to create necessary directories
+# $PATH_ROOT
+# $PATH_RAW_DATA
+# $PATH_FASTQ
+# $PATH_FASTQC
+# $PATH_TRIMMED
+# $PATH_SALMON
+# $PATH_INDEX
+
 ### download raw RNAseq data as SRA
 ACC_list=$(cat $PATH_ROOT/SRR_Acc_List.txt)
 
