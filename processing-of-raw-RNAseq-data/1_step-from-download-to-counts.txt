@@ -1,0 +1,45 @@
+### download raw RNAseq data as SRA
+ACC_list=$(cat $PATH_ROOT/SRR_Acc_List.txt)
+
+for ACC in ${ACC_list}
+do
+prefetch ${ACC} -O $PATH_RAW_DATA
+done
+
+
+### convert SRA to fastq
+ACC_list=$(cat $PATH_ROOT/SRR_Acc_List.txt)
+
+for ACC in ${ACC_list}
+do
+fastq-dump $PATH_RAW_DATA/${ACC}/${ACC}.sra --split-3 --gzip -O $PATH_FASTQ
+done
+
+### perform fastqc analysis
+ACC_list=$(cat $PATH_ROOT/SRR_Acc_List.txt)
+for ACC in ${ACC_list}
+do
+fastqc $PATH_FASTQ/${ACC}*.fastq.gz -o $PATH_FASTQC
+done
+
+### trimming of adapters, filtering based on quality and length
+ACC_list=$(cat $PATH_ROOT/SRR_Acc_List.txt)
+for ACC in ${ACC_list}
+do
+trimmomatic SE -threads 10 -phred33 -summary $PATH_TRIMMED/${ACC}.summary -quiet \
+$PATH_FASTQ/${ACC}.fastq.gz $PATH_TRIMMED/${ACC}_trimmed.fastq.gz \
+ILLUMINACLIP:$PATH_ROOT/reference/all_adapters.fa:2:30:10 LEADING:5 TRAILING:5 SLIDINGWINDOW:4:15 MAXINFO:50:0.8 MINLEN:36
+done
+
+### quantification with Salmon
+ACC_list=$(cat $PATH_ROOT/SRR_Acc_List.txt)
+
+for ACC in ${ACC_list}
+do
+echo "Processing sample ${ACC}"
+$PATH_SALMON/salmon quant -i $PATH_INDEX -l U \
+-r $PATH_TRIMMED/${ACC}_trimmed.fastq.gz \
+--fldMean=150 --fldSD=20 \
+-p 8 --validateMappings \
+-o $PATH_ROOT/quants/${ACC}
+done
