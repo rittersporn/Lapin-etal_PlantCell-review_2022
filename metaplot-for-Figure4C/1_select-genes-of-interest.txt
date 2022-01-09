@@ -1,0 +1,6 @@
+Selected gene sets:
+Saile et al 2020 processed in this study ("Saile-etal-2020_log2FC_V1_20220109.txt" in this repository)
+
+ADR1-dependent: WT_avrRps4 (8 hpi) vs adr1_triple_avrRps4 (8 hpi), padj <= 0.05, log2FC >= 1
+NRG1-dependent: WT_avrRps4 (8 hpi) vs nrg1_avrRps4 (8 hpi) OR nrg1_avrRps4 (8 hpi) vs adr1_triple_nrg1_avrRps4 (8 hpi) (both at padj <= 0.05, log2FC >= 1)
+
