@@ -42,6 +42,13 @@ $PATH_FASTQ/${ACC}.fastq.gz $PATH_TRIMMED/${ACC}_trimmed.fastq.gz \
 ILLUMINACLIP:$PATH_ROOT/reference/all_adapters.fa:2:30:10 LEADING:5 TRAILING:5 SLIDINGWINDOW:4:15 MAXINFO:50:0.8 MINLEN:36
 done
 
+### indexing of sequence file for salmon
+
+$PATH_SALMON/salmon index \
+-t $PATH_ROOT/reference/Arabidopsis_thaliana.TAIR10.cdna.all.fa.gz \
+-i $PATH_ROOT/reference/At_index
+
+
 ### quantification with Salmon
 ACC_list=$(cat $PATH_ROOT/SRR_Acc_List.txt)
 
