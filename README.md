@@ -8,8 +8,9 @@ Figure 2A contains heatmap based on previuosly published RNAseq data:
 3. PTI+ETI - Saile et al. 2020 Two unequally redundant "helper" immune receptor families mediate Arabidopsis thaliana intracellular "sensor" immune receptor functions; (https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000783); raw data were used, ENA/SRA ID - PRJNA637584
 
 
-## Content of repository:
+## Content of repository related to Figure 2A:
 
 1. Code to process raw RNAseq data - ./processing-of-raw-RNAseq-data/1_steps-from-download-to-counts.txt
 2. SRA accession codes for ETI and PTI+ETI datasets - ./processing-of-raw-RNAseq-data/PTI-and-ETI and ./processing-of-raw-RNAseq-data/ETI
 3. Code to perform differential gene expression analysis - ./processing-of-raw-RNAseq-data/2_steps-from-counts-to-DE.R
+4. Code to generate heatmap in Figure 2A from log2FC data - ./heatmap-for-Figure2A/heatmap-for-GOI.R with input log2FC data and geneIDs of interest in ./heatmap-for-Figure2A/input
