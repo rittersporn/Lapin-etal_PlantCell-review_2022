@@ -38,4 +38,4 @@ SARD1 chromatin enrichment profiles (bigwig format) for Psm-infected plants can 
 https://edmond.mpdl.mpg.de/imeji/collection/U6N5zIOIWgjjMZCu
 
 ### Related content of repository:
-1. Code to draw metaplot in Figure 4C - ./metaplot-for-Figure4C/code-for-metaplot-SARD1.txt with input data from the above Edmond collection and bed files in ./metaplot-for-Figure4C/bed-files
+1. Code to draw metaplot in Figure 4C - ./metaplot-for-Figure4C with input data from the above Edmond collection and geneset and bed files in respective folders in ./metaplot-for-Figure4C
