@@ -1,0 +1,13 @@
+# produce a metaplot with deepTools3
+computeMatrix scale-regions -S SARD1_Psm.bw \
+-R ./bed_files/BED_gene_TAIR10.bed \
+./bed_files/BED_gene_ADR1.bed \
+./bed_files/BED_gene_ADR1_strict.bed \
+./bed_files/BED_gene_NRG1.bed \
+--beforeRegionStartLength 2000 \
+--regionBodyLength 2000 \
+--afterRegionStartLength 2000 \
+--skipZeros -o SARD1_Psm_matrix.mat.gz
+
+plotHeatmap -m SARD1_Psm_matrix.mat.gz \
+-out SARD1_Psm_at_ADR1_NRG1.pdf
