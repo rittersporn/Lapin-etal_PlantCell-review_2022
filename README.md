@@ -16,3 +16,15 @@ by Dmitry Lapin, Oliver Johanndrees, Zhongshou Wu, Xin Li, Jane E. Parker
 2. SRA accession codes for ETI and PTI+ETI datasets - ./processing-of-raw-RNAseq-data/PTI-and-ETI and ./processing-of-raw-RNAseq-data/ETI
 3. Code to perform differential gene expression analysis - ./processing-of-raw-RNAseq-data/2_steps-from-counts-to-DE.R
 4. Code to generate heatmap in Figure 2A from log2FC data - ./heatmap-for-Figure2A/heatmap-for-GOI.R with input log2FC data and geneIDs of interest in ./heatmap-for-Figure2A/input
+
+## Source data for Figure 2B:
+
+Processed RNAseq data are from Johanndrees and Baggs et al. 2021 (preprint) Differential EDS1 requirement for cell death activities of plant TIR-domain proteins (https://www.biorxiv.org/content/10.1101/2021.11.29.470438v2.full)
+
+Gene expression data and corresponding metadata (Supplementary-Table-5_V1_20211111.xlsx) can be found in Edmond collection
+Supporting information for Johanndrees, Baggs et al 2021
+https://edmond.mpdl.mpg.de/imeji/collection/Pv5t4gM8Sv0TOrCU
+
+
+## Content of repository related to Figure 2B:
+1. Code to draw boxplots in Figure 2B - ./boxplot-for-Figure2B/boxplot-scaled-expression-GOI.R with input data from the above collection at Edmond
