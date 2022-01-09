@@ -12,4 +12,4 @@ Figure 2A contains heatmap based on previuosly published RNAseq data:
 
 1. Code to process raw RNAseq data - ./processing-of-raw-RNAseq-data/1_steps-from-download-to-counts.txt
 2. SRA accession codes for ETI and PTI+ETI datasets - ./processing-of-raw-RNAseq-data/PTI-and-ETI and ./processing-of-raw-RNAseq-data/ETI
-3. Code to perform differential gene expression analysis - ./processing-of-raw-RNAseq-data/2_steps-from-counts-to-DEGs.txt
+3. Code to perform differential gene expression analysis - ./processing-of-raw-RNAseq-data/2_steps-from-counts-to-DEGs.R
