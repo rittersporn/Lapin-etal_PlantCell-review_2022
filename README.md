@@ -1,7 +1,9 @@
-# Lapin et al Plant Cell review 2022
+# Notes and code to generate figures in:
 # Molecular innovations in plant TIR-based immunity signaling
+by Dmitry Lapin, Oliver Johanndrees, Zhongshou Wu, Xin Li, Jane E. Parker
 
-Figure 2A contains heatmap based on previuosly published RNAseq data:
+
+## Source data for Figure 2A:
 
 1. PTI - Bjornson et al. 2021 The transcriptional landscape of Arabidopsis thaliana pattern-triggered immunity; (https://www.nature.com/articles/s41477-021-00874-5); Supplementary Table 1 was used
 2. ETI - Ngou et al. 2021 Mutual potentiation of plant immunity by cell-surface and intracellular receptors; (https://www.nature.com/articles/s41586-021-03315-7); raw RNAseq data were used, ENA/SRA ID - PRJEB34955
