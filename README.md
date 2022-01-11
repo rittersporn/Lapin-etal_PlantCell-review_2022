@@ -1,4 +1,4 @@
-# Notes and code to generate figures in:
+# Notes and code related to
 # Molecular innovations in plant TIR-based immunity signaling
 by Dmitry Lapin, Oliver Johanndrees, Zhongshou Wu, Xin Li, Jane E. Parker
 
