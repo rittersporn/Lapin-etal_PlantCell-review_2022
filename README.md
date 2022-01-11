@@ -1,6 +1,8 @@
-# Notes and code related to
+# Notes and code related to manuscript:
 # Molecular innovations in plant TIR-based immunity signaling
 by Dmitry Lapin, Oliver Johanndrees, Zhongshou Wu, Xin Li, Jane E. Parker
+
+Version: V1 2022.01.11
 
 ## Figure 2A
 ### Source data:
@@ -39,3 +41,6 @@ https://edmond.mpdl.mpg.de/imeji/collection/U6N5zIOIWgjjMZCu
 
 ### Related content of repository:
 1. Code to draw metaplot in Figure 4C - ./metaplot-for-Figure4C with input data from the above Edmond collection and geneset and bed files in respective folders in ./metaplot-for-Figure4C
+
+## Prediction of TPR repeats in TNPs using Phyre2
+Homology modelling results are in ./Phyre2-prediction-of-TPRs-in-TNPs. Names of target proteins are in ./Phyre2-prediction-of-TPRs-in-TNPs/checked-protein-sequences.txt
